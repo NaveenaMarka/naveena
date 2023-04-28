@@ -1,0 +1,15 @@
+ul{
+    display: inline;
+    text-align: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    padding-right: 10px;
+    color: aqua;
+    opacity: 0.5;
+    list-style-type: none;
+    border: 2px solid black;
+    background-color: blueviolet;
+}
+*{margin: 0px;
+padding: 0px;}
+a:active{color: gold;}

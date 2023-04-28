@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        html{
+            font-family: "Lucida sans", sans-serif;
+        }
+        .header {
+            background-color: blue;
+            color: aliceblue;
+            padding: 15px;
+            text-align: center;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        .menu li {
+            padding: 9px;
+            margin-bottom: 8px;
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+        .menu li:hover {
+            background-color: brown;
+        }
+        .aside {
+background-color: blueviolet;
+padding: 12px;
+color: aliceblue;
+text-align: center;
+font-size: 13px;
+        }
+.footer {
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    font-size: 10px;
+    padding: 13px;
+}
+/* For mobile phones: */
+[class*="col-"]{
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets */
+    .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Backend</h1>
+    </div>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>Git</li>
+            </ul>
+        </div>
+        <div class="col-6 col-s-9">
+            <h1>The City</h1>
+            <p>Back-end developers are the experts who build and maintain the mechanisms that process data and perform actions on websites. Unlike front-end developers, who control everything you can see on a website, back-end developers are involved in data storage, security, and other server-side functions that you cannot see.</p>
+        </div>
+        <div class="col-3 col-s-12">
+        <div class="aside">
+            <h2>What is Python?</h2>
+            <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.</p>
+            <h2>What is java?</h2>
+            <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+            <h2>What is sql?</h2>
+            <p>Structured Query Language, abbreviated as SQL, is a domain-specific language used in programming and designed for managing data held in a relational database management system, or for stream processing in a relational data stream management system.</p>
+            <h2>What is git?</h2>
+            <p>Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently.</p>
+        </div>
+        <img src=""
+    </div>
+    </div>
+    <div class="footer">
+        <p>A backend developer is responsible for writing backend codes and communicating when the user triggers any particular action. </p>
+    </div>
+</body>
+
+</html>

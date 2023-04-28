@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: palevioletred;
+            size: 10px;
+        }
+        h1{text-align: center;}
+    </style>
+</head>
+<body>
+    <form>
+        <h1>QUIZ</h1>
+        <p>1.HTML5 stands for?</p>
+        <input type="radio" name="q1" value="A">
+        <label>A.Hyper text markup language</label><br>
+        <input type="radio" name="q1" value="B">
+        <label>B.Hypering text markup language</label><br>
+        <input type="radio" name="q1" valueC="C">
+        <label>C.Hypered text markup language</label><br><br>
+        <p>2.CSS Stands for?</p>
+        <input type="radio" name="q2" value="A">
+        <label>A.Casade style sheets</label><br>
+        <input type="radio" name="q2" value="B">
+        <label>B.Cascading style sheetts</label><br>
+        <input type="radio" name="q2" valueC="C">
+        <label>C.XYZ3</label><br><br>
+        <p>3.JS Stands for?</p>
+        <input type="radio" name="q3" value="A">
+        <label>A.Java scripting</label><br>
+        <input type="radio" name="q3" value="B">
+        <label>B.Java script</label><br>
+        <input type="radio" name="q3" valueC="C">
+        <label>C.XYZ3</label><br><br>
+        <input type="submit"value="submit">
+
+    </form>
+    <script>
+        var f1=document.querySelector("form");
+        var p1=document.querySelector(".result");
+        var key=['A','B','B'];
+
+        f1.addEventListener("submit",function(e){
+            var score=0;
+            e.preventDefault();
+            //p1.style.disply="block";
+            var 
+            userAnswer=[f1.q1.value,f1.q2.value,f1.q3.value];
+            userAnswer.forEach(function(m1,index)
+            {
+                console.log(m1===key[index]);
+                if(m1===key[index]){
+                   score+=25;
+                }
+            })
+            console.log(score);
+                   //r1.querrySelector('span'),textContent='${score}';
+        })
+        f1.reset();
+        
+    </script>
+</body>
+</html>

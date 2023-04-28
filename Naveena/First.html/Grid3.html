@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid3</title>
+    <style>
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    background-color: aqua;
+    padding: 10px;
+}
+.grid-container>div{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.item8{
+    grid-area: 1/2/5/6;
+}
+    </style>
+</head>
+<body>
+   <div class="grid-container">
+        <div class="item1">image</div>
+        <div class="item2">link</div>
+        <div class="item3">audio</div>
+        <div class="item4">video</div>
+        <div class="item5">iframe</div>
+        <div class="item6">table</div>
+        <div class="item7">list</div>
+        <div class="item8"><img src="https://cdn.pixabay.com/photo/2023/03/03/17/36/peafowl-7828140__340.jpg" height="400" width="700"></div>
+        <div class="item9">background</div>
+        <div class="item10">fieldset</div>
+        <div class="item11">tag</div>
+        <div class="item12">element</div>
+        <div class="item13">heading</div>
+        <div class="item14">body</div>
+        <div class="item15">title</div>
+   </div> 
+</body>
+</html>

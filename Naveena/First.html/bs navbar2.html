@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Facebook_Home_logo.svg" alt="home logo" style="width: 40px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="my details.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nirman org details.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nirmaan org.html">SERVICES</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="games grid.html">GAMES</a></li>
+            <li><a class="dropdown-item" href="education grid.html">EDUCATION</a></li>
+            <li><a class="dropdown-item" href="grid2.html">COURSES</a></li>
+          </ul>
+        </li>
+
+        <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">
+                <img src="https://i.pinimg.com/564x/18/f4/48/18f448ff8ec3358e3255ac19e37c53b1.jpg" alt="Search logo" style="width:40px;">
+            </button>
+          </form>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Carousel-->
+<div id="anv" class="carousel slide" data-bs-ride="carousel">
+                  <!-- Indicators/dots -->
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                  </div>
+    <!--The sideshow/carousel-->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwLaaKNHyB9p4GQvOeqfVEKv-hVjqboiawtg&usqp=CAU" alt="Nirmaan org image" class="d-block" style="width: 100%; height: 100%;">
+        </div>
+        <div class="carousel-item">
+            <img src="https://nirmaan.org/wp-content/uploads/2023/03/GridArt_20230302_114603842-scaled.jpg" alt="nirmaan staff image" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+            <img src="https://nirmaan.org/wp-content/uploads/2023/03/GridArt_20230302_115340195-scaled.jpg" alt="nirmaan studens image" class="d-block" style="width: 100%; height: 100%;">
+        </div>
+    </div>
+    <!--left and right controls/icons-->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-ride="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+</body>
+</html>
